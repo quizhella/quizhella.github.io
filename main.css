@@ -1,0 +1,32 @@
+.wrong-answer{
+
+	background-color: #FFC0C0;
+
+}
+
+.verificare{
+/*	position:relative;
+	margin-left: auto;
+    margin-right: auto;*/
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding:20px;
+}
+
+.corrent-answer{
+
+	border: 3px solid #5DA038;
+    padding: 5px 5px;     
+    width: 300px;
+    border-radius: 15px;
+}
+
+.answer {
+
+	font-size: 1.2em;
+}
+
+.question{
+
+	padding-left: 50px;
+}
