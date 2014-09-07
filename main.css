@@ -1,8 +1,177 @@
-.wrong-answer{
+@font-face {
+  font-family: 'Hella Din Universal Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Tangerine'), url('/hella-fonts/HellaDinUniversal-Light.otf') format('truetype');
+}
 
-	background-color: #FFC0C0;
+body, div, h1,h2,h3,h4,h5,h6, span{
+  font-family: 'Hella Din Universal Light';
+}
+
+
+/****************************************************
+*********** DISABLE SCROLLING ***********************
+*****************************************************/
+body {
+    overflow: hidden;
+    position:relative;
+}
+
+
+/*****************************************
+************* DIALOG *********************
+*****************************************/
+
+.material-dialog-container.active{
+	/*position:fixed;*/
+	/*top:200px;*/
+	/*left:20%;*/
+	width: 75%;position: fixed;left: 50%;margin: 0 0 0 -37.5%;
+}
+material-backdrop {
+	position:fixed;
+}
+material-dialog{
+	position:fixed;
+	top:15%;
+	left:35%;
+}
+.material-dialog-container material-dialog .dialog-content{
+	padding:60px;
+}
+
+
+/****************************************************
+*********** OVERRIDE SOME MATERIAL ******************
+*****************************************************/
+material-content material-toolbar.material-theme-light{
+	background-color: rgb(15,35,100) !important;	
+}
+
+/*remove dotted lines from radio group*/
+material-radio-group {
+	border: initial;
+}
+material-checkbox .material-label{
+	border: initial;	
+}
+
+material-radio-button .material-container {
+	visibility: hidden;
+}
+material-checkbox .material-icon{
+	visibility: hidden;
+}
+.material-label {	
+	width: 70%;
+}
+/*material-container  material-off{
+	visibility: hidden;
+}*/
+
+
+.question{
+
+	padding-left: 50px;
+}
+
+	.answer {
+
+		font-size: 1.2em;
+	}
+
+	.answer i {
+		font-size: 1.5em;
+	}
+
+/********************************
+************ images *************
+********************************/
+
+.question-image{
+/*	margin-left:-200px;
+	 margin-top:200px; */
+	 z-index:-10
+}
+
+.question-image img{
+	width:100%;
+	height: 100%;
 
 }
+
+
+@media only screen and (max-width: 800px) and (orientation : portrait) {
+	.pull-left{
+		margin-left:-150px;
+	}
+
+	.pull-down{
+		margin-top:25%; 	
+	}
+}
+
+/*.question-image{
+	position: absolute;
+	height: auto;
+	width: 160%;
+	bottom: 0px;
+	left: -100px;
+	z-index: -10;
+}
+*/
+
+
+/**************************************
+********** ANSWER BAR *****************
+***************************************/
+.answerbar{
+	width:115%;
+	height:120%%;
+
+	top:-10%;
+	left:-10px;
+	z-index:-1;
+	position:absolute;
+	padding:5px;
+	border-radius:6px;  
+}
+
+	.answerbar i{
+		position:absolute;
+		right:-30px;
+	    top:10%;
+	}
+
+
+	.wrong-answer{
+		background-color: rgb(245,177,92);
+	}
+
+
+	.corrent-answer{
+		background-color: rgb(15,35,100);
+	}
+
+
+.selected-answer-text{
+	color:white;
+}
+
+.wrong-icon{
+    color: rgb(188,121,54);
+}
+
+.correct-icon{
+	vertical-align: baseline;
+	color: rgb(15,35,100);
+}
+
+
+
+
+
 
 .verificare{
 /*	position:relative;
@@ -13,20 +182,26 @@
 	padding:20px;
 }
 
-.corrent-answer{
 
-	border: 3px solid #5DA038;
-    padding: 5px 5px;     
-    width: 300px;
-    border-radius: 15px;
+/**********************************************
+*****************  ANIMATIE ANSWER BAR *********
+***********************************************/
+
+.animate-show {
+  /*line-height:20px;*/
+  opacity:1;
+  padding:10px;
+  /*border:1px solid black;*/
 }
 
-.answer {
-
-	font-size: 1.2em;
+.animate-show.ng-hide-add.ng-hide-add-active,
+.animate-show.ng-hide-remove.ng-hide-remove-active {
+  -webkit-transition:all ease-out 0.3s;
+  transition:all ease-out 0.3s;
 }
 
-.question{
-
-	padding-left: 50px;
+.animate-show.ng-hide {
+  /*line-height:0;*/
+  opacity:0;
+  /*padding:0 10px;*/
 }
