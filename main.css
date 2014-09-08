@@ -23,10 +23,31 @@ body {
 ************* DIALOG *********************
 *****************************************/
 
-.material-dialog-container.active{
+@media only screen and (max-height: : 801px) and (orientation : landscape) {
+	.material-dialog-container material-dialog .dialog-content{
+
+		padding:20px;
+
+	}
+}
+@media only screen and (max-width: 801px) and (orientation : portrait) {
+	.material-dialog-container material-dialog .dialog-content{
+
+		padding:70px;
+
+	}
+}
+
+
+
+material-button .material-button-inner{
+	padding:15px;
+}
+
+/*.material-dialog-container.active{
 	/*position:fixed;*/
 	/*top:200px;*/
-	/*left:20%;*/
+	/*left:20%;
 	width: 75%;position: fixed;left: 50%;margin: 0 0 0 -37.5%;
 }
 material-backdrop {
@@ -39,7 +60,7 @@ material-dialog{
 }
 .material-dialog-container material-dialog .dialog-content{
 	padding:60px;
-}
+}*/
 
 
 /****************************************************
@@ -169,17 +190,8 @@ material-checkbox .material-icon{
 }
 
 
-
-
-
-
-.verificare{
-/*	position:relative;
-	margin-left: auto;
-    margin-right: auto;*/
-	margin-top: 50px;
-	margin-bottom: 50px;
-	padding:20px;
+.end-spacer{
+	height:100px;
 }
 
 
