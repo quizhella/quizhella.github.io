@@ -23,19 +23,24 @@ body {
 ************* DIALOG *********************
 *****************************************/
 
-@media only screen and (max-height: : 801px) and (orientation : landscape) {
-	.material-dialog-container material-dialog .dialog-content{
+@media only screen and (max-height: 801px) and (orientation : landscape) {
+	.material-dialog-container material-dialog .dialog-content-inner{
 
-		padding:20px;
+		padding:55px;
 
 	}
 }
 @media only screen and (max-width: 801px) and (orientation : portrait) {
-	.material-dialog-container material-dialog .dialog-content{
+	.material-dialog-container material-dialog .dialog-content-inner{
 
 		padding:70px;
 
 	}
+}
+
+.material-dialog-container material-dialog {
+	max-width: 94%;
+	max-height: 94%;
 }
 
 
@@ -147,6 +152,11 @@ material-checkbox .material-icon{
 /**************************************
 ********** ANSWER BAR *****************
 ***************************************/
+
+.first-question .answerbar{
+	width:145%;
+}
+
 .answerbar{
 	width:115%;
 	height:120%%;
