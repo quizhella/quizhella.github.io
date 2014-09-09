@@ -47,7 +47,7 @@
 
         <div layout="horizontal"  layout-padding>
 
-          <div class="answer">
+          <div class="answer first-question">
                   <material-radio-group ng-model="answers.q1" ng-cloack>
 
                     <material-radio-button value="1"  ng-disabled='testCompleted' ng-click='toastWrongChoice($event,answers.q1!=2)'>
@@ -80,8 +80,8 @@
     </material-card>
 
 <!-- Question 2 -->
-    <material-card  >
-      <h2 id="q2" class="question">What does HELLA Romania manufacture?
+    <material-card id="q2" >
+      <h2  class="question">What does HELLA Romania manufacture?
       <i  ng-show="q2Correct()"class="fa fa-check-circle-o correct-icon"> </i></h2>
       <p>
 
@@ -134,8 +134,8 @@
 
 
 <!-- Question 3 -->
-     <material-card >
-      <h2  id="q3" class="question">What is HELLA slogan?
+     <material-card id="q3">
+      <h2   class="question">What is HELLA slogan?
       <i  ng-show="q3Correct()" class="fa fa-check-circle-o correct-icon"> </i></h2>
      <!-- class="material-card-image"  <img src="https://blogs.ubc.ca/CourseBlogSample01/wp-content/themes/thesis/rotator/sample-1.jpg" > -->
       <p>
@@ -173,8 +173,8 @@
     </material-card>
 
 <!-- Question 4 -->
-    <material-card >
-      <h2  id="q4" class="question">Where does HELLA have subsideries in Romania?
+    <material-card id="q4">
+      <h2   class="question">Where does HELLA have subsideries in Romania?
       <i  ng-show="q4Correct()" class="fa fa-check-circle-o correct-icon"> </i></h2>
       <p>
 
@@ -223,8 +223,8 @@
 
 
 <!-- Question 5 -->
-    <material-card layout-padding >
-      <h2   id="q5" class="question">What kind of jobs offers HELLA in Romania?
+    <material-card layout-padding id="q5">
+      <h2    class="question">What kind of jobs offers HELLA in Romania?
       <i  ng-show="q5Correct()" class="fa fa-check-circle-o correct-icon"> </i></h2>
       <p>
 
