@@ -167,7 +167,7 @@ material-checkbox .material-icon{
 	position:absolute;
 	padding:5px;
 	border-radius:6px;  
-	-webkit-transform: translate3d(0,0,0);
+	transform: scale(1);
 }
 
 	.answerbar i{
@@ -244,7 +244,6 @@ material-checkbox .material-icon{
 .animate-bar.ng-hide-add {
   -webkit-animation: 0.12s pulseOutAnimation ease-in;
   animation: 0.12s pulseOutAnimation ease-in;
-    display: block !important;
 }
 
 
