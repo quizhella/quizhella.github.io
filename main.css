@@ -237,13 +237,13 @@ material-checkbox .material-icon{
 */
 
 .animate-bar.ng-hide-remove {
-  -webkit-animation: 0.2s pulseInAnimation;
-  animation: 0.2s pulseInAnimation;
+  -webkit-animation: 0.2s pulseInAnimation ease-in;
+  animation: 0.2s pulseInAnimation ease-in;
 }
  
 .animate-bar.ng-hide-add {
-  -webkit-animation: 0.2s pulseOutAnimation;
-  animation: 0.2s pulseOutAnimation;
+  -webkit-animation: 0.12s pulseOutAnimation ease-in;
+  animation: 0.12s pulseOutAnimation ease-in;
     display: block !important;
 }
 
