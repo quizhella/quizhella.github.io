@@ -167,6 +167,7 @@ material-checkbox .material-icon{
 	position:absolute;
 	padding:5px;
 	border-radius:6px;  
+	-webkit-transform: translate3d(0,0,0);
 }
 
 	.answerbar i{
@@ -209,21 +210,62 @@ material-checkbox .material-icon{
 *****************  ANIMATIE ANSWER BAR *********
 ***********************************************/
 
-.animate-show {
-  /*line-height:20px;*/
-  opacity:1;
+/*.animate-show {
+  /*line-height:20px;
+  transform: scale(1.1);
   padding:10px;
-  /*border:1px solid black;*/
+  /*border:1px solid black;
 }
 
 .animate-show.ng-hide-add.ng-hide-add-active,
 .animate-show.ng-hide-remove.ng-hide-remove-active {
-  -webkit-transition:all ease-out 0.3s;
-  transition:all ease-out 0.3s;
+  -webkit-transition:all ease-out 0.15s;
+  transition:all ease-out 0.15s;
 }
 
 .animate-show.ng-hide {
-  /*line-height:0;*/
-  opacity:0;
-  /*padding:0 10px;*/
+  /*line-height:0;
+   transform: scale(0.1);
+  /*padding:0 10px;
+}*/
+
+
+/*.animate-bar.ng-hide-add {
+  -webkit-animation: 2s firstAnimation;
+  animation: 2s firstAnimation;
+}
+*/
+
+.animate-bar.ng-hide-remove {
+  -webkit-animation: 0.2s pulseInAnimation;
+  animation: 0.2s pulseInAnimation;
+}
+ 
+.animate-bar.ng-hide-add {
+  -webkit-animation: 0.2s pulseOutAnimation;
+  animation: 0.2s pulseOutAnimation;
+    display: block !important;
+}
+
+
+@-webkit-keyframes pulseInAnimation {
+  0% {
+	 transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }N
+  100% {
+    transform: scale(1);
+  }
+}
+/* For Chrome and Safari */
+@-webkit-keyframes pulseOutAnimation {
+  /* from is equivalent to 0% */
+  0% {
+	 transform: scale(1);
+  }
+  100% {
+    transform: scale(0.01);
+  }
 }
